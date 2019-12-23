@@ -1,0 +1,186 @@
+
+
+
+@article{
+李琦马军-460,
+   Author = {李琦 and 马军},
+   Title = {基于人物相关社区的重名消解研究},
+   Journal = {山东大学学报(理学版)},
+   Volume = {47},
+   Number = {03},
+   Pages = {33-37},
+   Note = {37-1389/N},
+   Abstract = {由于人的重名现象,人名检索的结果往往是同名的不同人物实体相关网页的混合。重名消解是根据上下文来区分同名的不同人物实体的过程。本文提出了基于相关社区的重名消解方法,采用改进的Espresso算法进行相关社区发现。将每个网页发现的社区应用到两阶段重名消解算法中,并且在WePS-2测试集上进行试验。实验结果表明了该方法的有效性。},
+   Keywords = {社会网络;社团;重名消解;人名检索;聚类},
+   Year = {2012} }
+
+
+
+
+@phdthesis{
+郑威杰-454,
+   Author = {郑威杰},
+   Title = {科技文献作者消歧方法研究},
+   School = {杭州电子科技大学},
+   Note = {期: 03},
+   Abstract = {近年来,网络海量科技文献知识库为科技工作者提供便捷的文献检索和学习研究服务,同时大量的作者同名现象降低了检索的准确性,因此作者消歧是该类知识库亟待解决的一个问题。作者消歧一般采用聚类方法来处理,针对目前聚类消歧方法没有充分利用作者间关系,本文研究提出一种基于二阶段层次聚类的作者消歧方法,用于解决同单位和不同单位的同名作者消歧问题,首先根据启发式策略从待消歧候选作者中发现同人的作者,通过聚类合并实现消歧,然后充分利用全局合著者关系,在聚类的迭代过程中补充合著者关系并结合作者的属性特征实现消歧。本文的主要研究工作如下:(1)作者消歧数据预处理。首先,针对网上不同文献知识库的文献格式不统一的问题,设计研发了科技文献数据的采集和抽取框架,将文献存储为标准的结构化数据;其次构建作者和论文实体,将结构化数据转化为RDF三元组来表示,利用D2R工具展示作者和文献实体及实体之间的关系;最后分析作者属性特征和关系特征的消歧能力,选择合适的特征用于作者消歧任务。(2)通过构建论文-合著者的关系图,研究提出一种基于图的作者消歧模型,建立消歧矩阵。研究提出利用词向量构建文档向量实现作者的属性相似度计算;研究提出基于图的合著者关系相似度计算;针对不同合著者对同名作者的区分度不同,研究提出利用姓名模糊度来衡量合著者的权重;最后提出一种基于属性特征和合著者关系的线性组合的相似度计算方法,结合作者的属性特征、合著者关系特征以及姓名模糊度,实现同名作者间的相似度计算。(3)充分利用合著者关系这一强特征,提出一种基于二阶段层次聚类的作者消歧方法。在第一阶段,针对可信合著者关系稀疏的问题,利用合著者扩展和共现关系实现待消歧候选作者的聚类合并;在第二阶段,针对合著者关系可信度低的问题,提出一种合著者关系的全局计算,结合线性组合的相似度计算方法进一步实现聚类合并。实验表明,本方法具有更优的准确性。},
+   Keywords = {作者消歧;层次聚类;相似度计算;RDF},
+   Year = {2017} }
+
+
+
+
+@phdthesis{
+宋文强-455,
+   Author = {宋文强},
+   Title = {科技文献作者重名消歧与实体链接},
+   School = {哈尔滨工业大学},
+   Note = {期: 04},
+   Abstract = {随着网络的普及，在线文献系统也随之发展，出现了如DBLP、微软学术等以作者为核心的文献集成系统，而同名作者识别是该类系统亟待解决的问题。本文将作者识别分为作者重名消歧与实体链接两个子问题：对于作者重名问题本文尝试了基于聚类的消歧方法和基于特征关系图的消歧识别方法；在解决文献与教师链接问题时，针对中英文文献采用了不同的实体链接方法。具体研究内容包括以下几个方面：	第一：文献测试数据集的构建与特征选择方法。本文首先给出了文献记录的获取方法，测试数据集的构建策略及消歧实验的通用评价方法。其次根据文献中不同信息特征对于消歧的作用强弱，给出了文献识别问题中的特征选择方法，并设计了统一的特征消歧能力测试算法。测试结果表明合作者、期刊与关键词特征具有最好的区分作用，摘要和标题虽然有一定的消歧能力，但有较大的误差。了解特征属性，对改进消歧算法和提高作者识别的准确度均有很好的指导意义。	第二：基于聚类算法的作者消歧方法。一般重名消歧问题的研究思路都是将消歧问题转化为聚类问题，本文尝试了层次、k-means、AP三种不同的聚类消歧方法，在分析了各个方法优缺点的基础上，根据文献的各属性特征在聚类中起的作用不同，提出了分步聚类消歧方法。实验结果表明分步聚类方法比普通聚类方法更有效，使得消歧的准确率达到90%，召回率也接近75%。	第三：基于特征关系图的消歧方法。本文在文献作者消歧问题中引入了特征关系图的概念，将消歧问题转化成图的划分问题，给出了两种分别采用基于图的层次聚类消歧方法和基于连通子图划分的消歧方法。结果显示，特征关系图的消歧方法明显优于传统基于聚类的方法，其中基于连通子图划分的方法取得了最好的效果，消歧结果的召回率提高到84%，平均准确率达到了94.5%。	第四：实体链接与Tnet系统实现。实体链接主要解决文献中的作者与教师实体库的教师链接问题，针对中英文文献采用了不同的实体链接方法，最后将作者识别问题的研究成果应用到Tnet系统的文献展示模块。},
+   Keywords = {作者识别;重名消歧;聚类算法;实体链接},
+   Year = {2012} }
+
+
+
+
+@article{
+阳怡林陈刚-459,
+   Author = {阳怡林 and 陈刚 and 周杰 and 李弼程},
+   Title = {人名消歧研究综述},
+   Journal = {信息工程大学学报},
+   Volume = {17},
+   Number = {04},
+   Pages = {478-483},
+   Note = {41-1196/N},
+   Abstract = {人名歧义性是自然语言处理中亟待解决的问题。首先介绍了人名消歧的研究背景与研究意义;其次,给出了基于聚类的人名消歧与基于实体链接的人名消歧的定义以及区别;然后,重点分析了以上两种人名消歧的研究方法以及存在的问题,并给出了可能的解决方案;最后,对全文进行总结并给出下一步的研究方向。},
+   Keywords = {人名消歧;实体链接;歧义性;聚类},
+   Year = {2016} }
+
+
+
+
+@phdthesis{
+邱爽-457,
+   Author = {邱爽},
+   Title = {学术论文同名作者消歧问题研究},
+   School = {湖北大学},
+   Note = {期: 06},
+   Abstract = {当今社会的学术研究活动越来越依赖于以DBLP为代表的学术搜索引擎。然而大部分学术搜索引擎并不能很好地解决同名作者歧义导致的按作者名搜索学术论文结果有误的问题。本文在形式化定义学术论文同名作者消歧问题后,在对传统消歧方法的研究基础上提出了基于高置信度特征属性的分层聚类方法,并进一步提出基于语义的作者相关话题模型来进行同名作者消歧工作。具体的研究内容如下:第一,进行数据集的构建和数据预处理。为测试传统方法的优劣和适用范围,同时为更进一步的研究工作提供数据基础,本文总结了同名作者消歧问题中的数据集特点,并构建覆盖大部分特点的测试数据集。在数据预处理环节,通过研究不同语言体系国家的命名规则,采用构建同名歧义组的方法解决了同名作者歧义问题中的同义问题。第二,提出基于高置信度特征属性的分层聚类方法。本文针对不同的特征属性单独采取不同的算法进行消歧工作,并得出不同特征属性的置信度排名。以此为基础,基于高置信度特征属性的分层聚类方法使用高置信度的特征属性。该方法一方面根据特征属性选择不同的相似度函数,另一方面聚类过程采取启发式规则每一次运行合并多个类簇。与传统的层次聚类算法相比,该方法获得的平均准确率提高了约10.7%,召回率提高了约2.9%,同时具有更高的执行效率。第三,进一步提出基于语义的作者相关话题模型。针对传统基于语义的消歧方法不能有效考虑学术论文话题分布的问题,本文首先训练测试数据集并构建话题树,然后通过话题模型将论文映射在对应的话题上,并生成对应的话题树,最后根据不同论文的话题在话题树上的分布计算其相似度进而聚类。实验表明该方法能够有效挖掘学术论文的语义信息并融入话题分布的因素,因而在同名作者消歧工作上能够获得较好的表现。第四,在TLDW系统中实现同名作者消歧。本文将同名作者消歧模块集成在TLDW系统中,并通过系统中的实际数据,进一步验证了本文方法的有效性。},
+   Keywords = {同名作者消歧;层次聚类;启发式规则;语义抽取;话题树},
+   Year = {2016} }
+
+
+
+
+@article{
+ShinKim-468,
+   Author = {Shin, Dongwook and Kim, Taehwan and Choi, Joongmin and Kim, Jungsun},
+   Title = {Author name disambiguation using a graph model with node splitting and merging based on bibliographic information},
+   Journal = {Scientometrics},
+   Volume = {100},
+   Number = {1},
+   Pages = {15--50},
+   Year = {2014} }
+
+
+
+
+@misc{
+ShinKim-467,
+   Author = {Shin, Dongwook and Kim, Taehwan and Jung, Hana and Choi, Joongmin},
+   Title = {Automatic method for author name disambiguation using social networks},
+   Publisher = {IEEE},
+   Pages = {1263--1270},
+   Year = {2010} }
+
+
+
+
+@article{
+WoodingWilcox-Jay-462,
+   Author = {Wooding, Steven and Wilcox-Jay, Kate and Lewison, Grant and Grant, Jonathan},
+   Title = {Co-author inclusion: A novel recursive algorithmic method for dealingwith homonyms in bibliometric analysis},
+   Journal = {Scientometrics},
+   Volume = {66},
+   Number = {1},
+   Pages = {11--21},
+   Year = {2006} }
+
+
+
+
+@misc{
+WangHan-469,
+   Author = {Wang, Chi and Han, Jiawei and Jia, Yuntao and Tang, Jie and Zhang, Duo and Yu, Yintao and Guo, Jingyi},
+   Title = {Mining advisor-advisee relationships from research publication networks},
+   Publisher = {ACM},
+   Pages = {203--212},
+   Year = {2010} }
+
+
+
+
+@article{
+FanWang-466,
+   Author = {Fan, Xiaoming and Wang, Jianyong and Pu, Xu and Zhou, Lizhu and Lv, Bing},
+   Title = {On graph-based name disambiguation},
+   Journal = {Journal of Data and Information Quality (JDIQ)},
+   Volume = {2},
+   Number = {2},
+   Pages = {10},
+   Year = {2011} }
+
+
+
+
+@misc{
+YoshidaIkeda-464,
+   Author = {Yoshida, Minoru and Ikeda, Masaki and Ono, Shingo and Sato, Issei and Nakagawa, Hiroshi},
+   Title = {Person name disambiguation by bootstrapping},
+   Publisher = {ACM},
+   Pages = {10--17},
+   Year = {2010} }
+
+
+
+
+@misc{
+ElmaciogluTan-465,
+   Author = {Elmacioglu, Ergin and Tan, Yee Fan and Yan, Su and Kan, Min-Yen and Lee, Dongwon},
+   Title = {Psnus: Web people name disambiguation by simple clustering with rich features},
+   Pages = {268--271},
+   Year = {2007} }
+
+
+
+
+@misc{
+HanGiles-461,
+   Author = {Han, Hui and Giles, Lee and Zha, Hongyuan and Li, Cheng and Tsioutsiouliklis, Kostas},
+   Title = {Two supervised learning approaches for name disambiguation in author citations},
+   Publisher = {IEEE},
+   Pages = {296--305},
+   Year = {2004} }
+
+
+
+
+@misc{
+MannYarowsky-463,
+   Author = {Mann, Gideon S. and Yarowsky, David},
+   Title = {Unsupervised personal name disambiguation},
+   Publisher = {Association for Computational Linguistics},
+   Pages = {33--40},
+   Year = {2003} }
+
+@article{
+aldous1989lower,
+  title={Lower bounds for covering times for reversible Markov chains and random walks on graphs},
+  author={Aldous, David J},
+  journal={Journal of Theoretical Probability},
+  volume={2},
+  number={1},
+  pages={91--100},
+  year={1989},
+  publisher={Springer}
+}

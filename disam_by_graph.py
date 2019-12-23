@@ -1,5 +1,3 @@
-# coding: utf-8
-
 # ### 一、数据分析
 
 import json
@@ -9,7 +7,7 @@ from collections import defaultdict
 import pinyin.cedict
 import difflib
 
-#改路径 改708
+#数据集路径
 valid_row_data_path = 'C:/Users/xch/Desktop/DataMining/data/sna_data/sna_valid_author_raw.json'
 valid_pub_data_path = 'C:/Users/xch/Desktop/DataMining/data/sna_data/sna_valid_pub.json'
 # 合并数据
@@ -125,7 +123,7 @@ def preprocessorg(org):
         org = org.replace('Ctr.', 'Center')
         org = org.replace('Behav.', 'Behavior')
         org = org.replace('Atom.', 'Atomic')
-        #org = org.split(';')[0]  # 多个机构只取第一个#多个机构只取第一个 我觉得是有问题的
+        #org = org.split(';')[0]  # 可以去掉这一个注释，但是速度会变慢
         org = org.lower()
         # result = org.split(';')#多个机构全部存储在result数组中 然后返回
     return org
